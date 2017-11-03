@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+img.img-my {
+    width: 10%;
+    min-width: 120px;
+}
+img.img-edu {
+    width: 15%;
+    min-width: 180px;
+}
+header.container {
+    border: inherit;
+    text-align: center;
+}
+div#mis-datos  {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+div.div-educacion {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+section> article:nth-child(2) {
+    border-bottom: 2px solid black;
+}
+section> article {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.div-habilidades {
+    background-color: rgb(175, 160, 160);
+    display: inline-block;
+    border-radius: 17px;
+    width: 130px;
+    font-size: 20px;
+    margin: 0 43px 0 0;
+}
+.div-habilidades div {
+    display: inline-block;
+}
+div.div-habilidades div:first-child {
+    background-color: rgb(56, 56, 165);
+    border-radius: 20px;
+    padding: 7px;
+    width: 22px;
+}
+
+
+
+/* 
+@media screen and (max-width: 762px){
+
+} */
+@media   (max-width: 700px){
+    h2:not(#nombre-apellido) {
+        font-size: 32px;
+    }
+    .container {
+        width: 95%;
+        border-radius: 20px;
+        background-color: #d4e3fc;
+    }
+    header.container {
+        visibility: hidden;
+        height: 15px;
+    }
+    section#name-top {
+        position: relative;
+    }
+    section#name-top> header {
+        position: absolute;
+        z-index: 2;
+        font-size: 8px;
+        border: 1px solid black;
+        opacity: 0.5;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100px;
+        top: 90px;
+    }
+    section#name-top img {
+        position: absolute;
+        top: -39px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    div#mis-datos {
+        width: 100%;
+        margin-top: 70px;
+    }
+    div#mis-datos p {
+        text-align: center;
+        width: 100%;
+    }
+    div#mis-datos p.hide {
+        visibility: hidden;
+    }
+    section#direccion h2 {
+        display: none;
+    }
+    #section-educacion {
+        text-align: center;
+    }
+    section#section-educacion .div-educacion p:not(#year) {
+        text-align: left;
+    }
+    section#section-educacion .div-educacion {
+        width: 100%;
+    }
+    section> article.educacion {
+        width: 40%;
+        display: inline-block;
+        margin: 0 2%;
+    }
+    section> article.educacion> img {
+        min-width: 100% !important;
+        /* display: none; */
+    }
+    div.div-educacion span {
+        display: none;
+    }
+    #section-educacion article:nth-child(2) {
+        border: none;
+    }
+    footer> h2 {
+        text-align: center;
+    }
+    footer> .div-habilidades {
+        /* color: red; */
+        /* text-align: left; */
+        margin: 2% 3% 4% 0;
+
+    }
+
+
+}

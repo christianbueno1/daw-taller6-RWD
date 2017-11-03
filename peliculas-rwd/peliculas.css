@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+/*.col-11 {width: 91.66%;}*/
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+body {
+	background-color: #E0CFCF;
+}
+
+section {
+	background-color: #F4ECEC; 
+}
+
+section {
+	border-bottom: 3px black solid;
+}
+
+img {
+	width: 80%	
+}
+
+ul {
+	margin-left: -8%;
+}
+
+header {
+    background-color: #90A0E9;
+}
+
+h1 {
+	margin-left: 2%;
+}
+
+h2 {
+	margin-left: 1%;
+}
+
+@media only screen and (max-width : 650px) and (min-width : 480px) {
+	h1, h2, h3 {
+		text-align: center;
+	}
+
+	article img, div[class="col-5"] {
+		display: none;
+	}
+
+	div[class="col-2"] {
+		width: 70%;
+		margin-top: 60%;
+		font-size: smaller;
+	}
+
+	h3 {
+		display: inline;
+		width: 400%;
+		margin-left: 2%;
+	}
+
+	ul {
+		display: inline;	
+		width: 800%;
+		margin-left: -18%;
+		
+	}
+
+	li {
+		display: inline;
+		list-style-type: none;
+  		
+	}
+
+	li:after {
+		content: ", ";
+	}
+
+	li:last-child:after {
+    content: "";
+	}
+
+	iframe {
+		width: 380%;
+		margin-left: -280%;
+		margin-top: -15%;
+	}
+
+	section[class="col-12"] {
+		border-bottom: hidden;
+		float: left;
+		width: 50%;	
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	h1, h2, h3 {
+		text-align: center;		
+	}
+
+	iframe, div[class="col-5"] {
+		display: none;
+	}
+
+	div[class="col-2"] {
+		width: 70%;
+		margin-top: 100%;
+		font-size: smaller;
+	}
+
+	h3 {
+		display: inline;
+		width: 400%;
+		margin-left: -20%;
+	}
+
+	ul {
+		display: inline;	
+		width: 800%;
+		margin-left: -20%;
+		
+	}
+
+	li {
+		display: inline;
+		list-style-type: none;
+  		
+	}
+
+	li:after {
+		content: ", ";
+	}
+
+	li:last-child:after {
+    content: "";
+	}
+
+	article img {	
+		width: 400%;
+		margin-left: 70%;	
+		margin-top: -10%;
+		z-index: 0;
+	}
+
+	section[class="col-12"] {
+		border-bottom: hidden;
+		float: left;
+		width: 50%;	
+	}
+}
